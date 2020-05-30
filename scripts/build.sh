@@ -10,6 +10,7 @@ GN_ARGS_BASE="
   use_custom_libcxx=false
   v8_use_external_startup_data=false
   icu_use_data_file=false
+  v8_monolithic=true
 "
 
 if [[ ${PLATFORM} = "ios" ]]; then
@@ -84,8 +85,8 @@ function build_arch()
     target="libv8android"
     target_ext=".so"
   elif [[ ${PLATFORM} = "ios" ]]; then
-    target="libv8"
-    target_ext=".dylib"
+    target="v8_monolith"
+    target_ext=".a"
   else
     exit 1
   fi
