@@ -8,6 +8,7 @@ GN_ARGS_BASE="
   is_component_build=false
   use_debug_fission=false
   use_custom_libcxx=false
+  use_xcode_clang = true
   v8_use_external_startup_data=false
   icu_use_data_file=false
   v8_monolithic=true
