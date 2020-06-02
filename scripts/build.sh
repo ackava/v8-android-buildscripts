@@ -6,6 +6,7 @@ BUILD_TYPE="Release"
 GN_ARGS_BASE="
   target_os=\"${PLATFORM}\"
   is_component_build=false
+  treat_warnings_as_errors=false
   use_debug_fission=false
   use_custom_libcxx=false
   use_xcode_clang = true
