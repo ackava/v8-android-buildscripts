@@ -87,7 +87,7 @@ function build_arch()
     target="libv8android"
     target_ext=".so"
   elif [[ ${PLATFORM} = "ios" ]]; then
-    target="libv8_monolith"
+    target="v8_monolith"
     target_ext=".a"
   else
     exit 1
