@@ -13,6 +13,7 @@ GN_ARGS_BASE="
   v8_use_external_startup_data=false
   icu_use_data_file=false
   v8_monolithic=true
+  enable_ios_bitcode=false
 "
 
 if [[ ${PLATFORM} = "ios" ]]; then
