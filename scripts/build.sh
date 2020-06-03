@@ -14,6 +14,10 @@ GN_ARGS_BASE="
   icu_use_data_file=false
   v8_monolithic=true
   enable_ios_bitcode=false
+  is_debug = false
+  ios_deployment_target=10
+  v8_use_external_startup_data=false
+  symbol_level=0
 "
 
 if [[ ${PLATFORM} = "ios" ]]; then
