@@ -33,7 +33,7 @@ function createAAR() {
 function createUniversalDylib() {
   printf "\n\n\t\t===================== create universal dylib =====================\n\n"
   mkdir -p "${BUILD_DIR}/lib/universal"
-  lipo "${BUILD_DIR}/lib/arm64/libv8.dylib" "${BUILD_DIR}/lib/x64/libv8.dylib" -output "${BUILD_DIR}/lib/universal/libv8.dylib" -create
+  lipo "${BUILD_DIR}/lib/arm64/libv8_monolith.a" "${BUILD_DIR}/lib/x64/libv8_monolith.a" -output "${BUILD_DIR}/lib/universal/libv8_monolith.a" -create
 }
 
 function copyDylib() {
