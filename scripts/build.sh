@@ -92,7 +92,7 @@ function build_arch()
   elif [[ ${PLATFORM} = "ios" ]]; then
     target="v8_monolith"
     targetName="libv8_monolith"
-    targetFolder="obj/
+    targetFolder="obj/"
     target_ext=".a"
   else
     exit 1
