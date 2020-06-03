@@ -90,7 +90,7 @@ function build_arch()
     target_ext=".so"
   elif [[ ${PLATFORM} = "ios" ]]; then
     target="v8_monolith"
-    targetName="libv8_monolith"
+    targetName="obj/libv8_monolith"
     target_ext=".a"
   else
     exit 1
